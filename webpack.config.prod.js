@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack"); /* Needed for jquery */
 
 module.exports = {
-	entry: ['./src/js/index.js', './src/scss/main.scss'],
+	entry: ['./client/index.js', './client/main.scss', './client/index.html'],
 	devServer: {
 proxy: {
   "/api": "http://localhost:3000"
@@ -56,7 +56,7 @@ proxy: {
   
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./src/index.html",
+      template: "./client/index.html",
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
