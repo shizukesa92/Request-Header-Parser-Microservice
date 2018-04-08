@@ -25,7 +25,8 @@ module.exports = {
     "babel/no-invalid-this": 1,
     "babel/semi": 1,
 	        "react-redux/connect-prefer-named-arguments": 2,
-			"import/named": 2
+			"import/named": 2,
+			no-tabs: 0
     },
 	"extends": [
 	        "plugin:react-redux/recommended",
