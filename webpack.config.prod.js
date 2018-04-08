@@ -4,6 +4,9 @@ const webpack = require("webpack"); /* Needed for jquery */
 
 module.exports = {
 	entry: ['./client/index.js', './client/main.scss', './client/index.html'],
+	 output: {
+    path: __dirname + '/dist/client/'
+  },
 	devServer: {
 proxy: {
   "/api": "http://localhost:3000"

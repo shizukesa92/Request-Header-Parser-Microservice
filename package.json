@@ -14,8 +14,8 @@
 		"start:prod": "node index.js",
 		"start": "nodemon index.js",
 		"dev": "webpack-dev-server --mode development --config webpack.config.prod.js",
-		"build": "NODE_ENV=production webpack --config webpack.config.prod.js",
-		"postinstall": "NODE_ENV=production webpack --config webpack.config.prod.js"
+		"build": "webpack --env prod --progress --config webpack.config.prod.js",
+		"postinstall": "webpack --env prod --progress --config webpack.config.prod.js"
 	},
 	"dependencies": {
 		"babel-core": "^6.26.0",
